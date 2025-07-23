@@ -10,3 +10,22 @@ export const config = {
     '/(api|trpc)(.*)',
   ],
 };
+
+// src/middleware.ts
+// import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+
+// // Define the routes that should be publicly accessible
+// const isPublicRoute = createRouteMatcher(["/"]);
+
+// export default clerkMiddleware((auth, req) => {
+//   // If the route is not public, protect it.
+//   // This will redirect unauthenticated users to the sign-in page.
+//   if (!isPublicRoute(req)) {
+//     auth();
+//   }
+// });
+
+// export const config = {
+//   // Update the matcher to run the middleware on all routes except for static files and _next internals.
+//   matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
+// };
