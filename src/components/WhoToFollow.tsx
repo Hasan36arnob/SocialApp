@@ -6,7 +6,7 @@ import FollowButton from "./FollowButton";
 
 async function WhoToFollow() {
   const users = await getRandomUsers();
-
+ 
  
 
   return (
